@@ -1,25 +1,18 @@
 # ------ root_path ------
 root_path: '/home/SS/datasets/CaFo_data/DATA/'
 
-
 # ------ Load Cache and Features ------
-load_cache: False
-load_pre_feat: False
-
-# load_cache: True
-# load_pre_feat: True
-
+load_pre_feat: True
 
 # ------ Hyperparamters ------
 search_hp: True
-# search_hp: False
-
 search_scale: [7, 3]
 search_step: [200, 20]
 
-beta: 1
-alpha: 1
-eta: 0.01
+Lambda: 1
+Omega: 1
+Alpha: 0.01
+Beta: 0.3
 
 gpt3_prompt_file: './gpt_file/ucf101_prompt.json'
 
@@ -35,7 +28,6 @@ dalle_dataset: 'dalle_ucf'
 dalle_shots: 8
 
 lr: 0.001
-augment_epoch: 1
 train_epoch: 70
 
 # ------ Open World ------
@@ -44,5 +36,3 @@ open_world:
   is_open_world: True  # True or False
   clean_dataset: True # True or False
   nlb: 0.3 # noise label
-  # ds: 0.0 # domain shift
-  ood: 0.0 # out of distribution
