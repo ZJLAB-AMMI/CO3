@@ -18,6 +18,7 @@ Through collaboration among these foundation models, CO3 effectively unlocks the
 3. Download the DINO model and place it in the "dino" directory.   
    e.g., "./dino/dino_resnet50_pretrain.pth".
 4. Download the datasets.
-5. Modify line 22 of the [main.py](https://github.com/ZJLAB-AMMI/CO3/blob/main/main.py) 文件中第22行的 main_path, according to the dataset that needs to be validated.  
-   e.g., 将main_path修改成 "./configs/imagenet/config.yaml".
-6. 修改所要验证数据集的config.yaml文件中第二行的 root_path，例如，在 ./configs/imagenet/config.yaml 路径下，修改 root_path 为 ./configs/imagenet/config.yaml
+5. Modify the **main_path** on line 22 of the [main.py](https://github.com/ZJLAB-AMMI/CO3/blob/main/main.py) to align with the specific dataset you are planning to validate.  
+   e.g., change the **main_path** to "./configs/imagenet/config.yaml".
+6. Update the **root_path** in the second line of the **config.yaml** file for the dataset you are validating.  
+   e.g., in the "./configs/imagenet/config.yaml" file, change the **root_path** to "./DATA/".
