@@ -19,7 +19,7 @@ from clean_dataset import clean_model
 from models.adapters import TeFu_Adapter
 
 # 'imagenet', 'pets', 'caltech101', 'dtd', 'food101', 'sun', 'cars', 'ucf', 'eurosat', 'fgvc', 'oxford_flower' 
-main_path = '/home/SS/codes/CO3/CO3_FINAL/configs/imagenet/config.yaml'
+main_path = './configs/imagenet/config.yaml'
 
 def get_arguments():
 
