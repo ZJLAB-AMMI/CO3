@@ -1,5 +1,6 @@
 # Collaborative Consortium of Foundation Models for Open-World Few-Shot Learning
-This paper has been accepted by AAAI 2024. We are profoundly grateful for the significant insights provided by [CAFO]([https://www.google.com](https://arxiv.org/pdf/2303.02151.pdf)https://arxiv.org/pdf/2303.02151.pdf).
+This paper has been accepted by AAAI 2024. We are profoundly grateful for the significant insights provided by [CaFo](https://arxiv.org/pdf/2303.02151.pdf).
+
 ## Abstract
 Open-World Few-Shot Learning (OFSL) is a crucial research field dedicated to accurately identifying target samples in scenarios where data is limited and labels are unreliable. 
 This research holds significant practical implications and is highly relevant to real-world applications. 
