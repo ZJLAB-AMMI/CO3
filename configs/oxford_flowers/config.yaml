@@ -1,5 +1,5 @@
 # ------ root_path ------
-root_path: '/home/SS/datasets/CaFo_data/DATA/'
+root_path: ''
 
 
 # ------ Load Cache and Features ------
