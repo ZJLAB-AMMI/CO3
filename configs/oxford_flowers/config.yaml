@@ -1,31 +1,24 @@
 # ------ root_path ------
 root_path: ''
 
-
 # ------ Load Cache and Features ------
-load_cache: False
-load_pre_feat: False
-
-# load_cache: True
-# load_pre_feat: True
-
+load_pre_feat: True
 
 # ------ Hyperparamters ------
 search_hp: True
-# search_hp: False
-
 search_scale: [50, 50]
 search_step: [200, 20]
 
-beta: 1
-alpha: 1.2
-eta: 0.01
+Lambda: 1
+Omega: 1.2
+Alpha: 0.01
+Beta: 0.3
 
 gpt3_prompt_file: './gpt_file/oxford_flowers_prompt.json'
 
 # ------ Basic Config ------
 dataset: 'oxford_flowers'
-shots: 16
+shots: 1
 clip_backbone: 'RN50'
 dino_backbone: 'resnet50'
 num_classes: 102
@@ -35,7 +28,6 @@ dalle_dataset: 'dalle_flowers'
 dalle_shots: 8
 
 lr: 0.001
-augment_epoch: 1
 train_epoch: 70
 
 # ------ Open World ------
@@ -44,5 +36,3 @@ open_world:
   is_open_world: True  # True or False
   clean_dataset: True # True or False
   nlb: 0.3 # noise label
-  # ds: 0.0 # domain shift
-  ood: 0.0 # out of distribution
